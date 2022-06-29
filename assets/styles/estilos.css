@@ -9,10 +9,12 @@
 
 .menu{
     background-color: transparent;
+    transition: 2s;
 }
 
 .menu2{
-    background-color: blue;
+    background-color: rgb(77, 0, 179);
+    transition: 1s;
 }
 
 .formulario{
