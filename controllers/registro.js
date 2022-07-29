@@ -1,7 +1,6 @@
 import { getAuth, createUserWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"
 
 let button = document.getElementById('button');
-let buttonExit = document.getElementById('buttonExit');
 
 //Escucho el Click en el boton de registro
 button.addEventListener('click', function (event) {
@@ -36,11 +35,3 @@ button.addEventListener('click', function (event) {
 
 })
 
-buttonExit.addEventListener('click', function () {
-    const auth = getAuth();
-    signOut(auth).then(() => {
-        // Sign-out successful.
-    }).catch((error) => {
-        // An error happened.
-    });
-})
